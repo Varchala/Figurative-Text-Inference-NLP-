@@ -4,7 +4,7 @@ class  inference_gen:
       self.context_vectors = []
       self.target_words = []
       self.candidate_word_set = []
-      self.model = gensim.models.Word2Vec.load("/content/drive/My Drive/word2vec_v3.model")
+      self.model = gensim.models.Word2Vec.load("word2vec_v3.model")
       self.metaphor = []
       self.sentences_tokenized = []
       self.summary = ""
