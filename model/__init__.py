@@ -1,0 +1,1 @@
+from model.inference_generator import inference_gen
