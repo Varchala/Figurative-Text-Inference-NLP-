@@ -108,7 +108,6 @@ class  inference_gen:
     def find_target_words(self,sentences):
 
       for sentence in  nltk.sent_tokenize(sentences):
-          print(sentence)
           
           nlp = spacy.load("en_core_web_sm")
           doc = nlp(sentence)
@@ -228,7 +227,7 @@ class  inference_gen:
     def find_candidate_wordset(self,t_word):
       synonyms = []
       hypernyms = []
-      print("Traget word selected: "+t_word)
+      #print("Traget word selected: "+t_word)
       if t_word!="":
         for syn in wordnet.synsets(t_word):
               for hyper in syn.hyponyms():
@@ -238,7 +237,7 @@ class  inference_gen:
 
         self.candidate_word_set = set(synonyms+hypernyms)
 
-      print(self.candidate_word_set)
+      #print(self.candidate_word_set)
 
     def find_cos_sim(self,context_vector):
         cos_sim = []
@@ -314,7 +313,7 @@ class  inference_gen:
      
 
     def fit(self,sentences):
-     
+      print("Training the model............")
       self.abstract_score_preprocessing()
       self.pcaf()
       self.find_target_words(sentences)
@@ -333,4 +332,5 @@ class  inference_gen:
 
       self.summarizer()
       self.abstractive_summarizer()
+      print("Training finished!")
 
