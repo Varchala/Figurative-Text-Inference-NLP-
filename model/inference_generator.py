@@ -4,7 +4,7 @@ class  inference_gen:
       self.context_vectors = []
       self.target_words = []
       self.candidate_word_set = []
-      self.model = gensim.models.Word2Vec.load("word2vec_v3.model")
+      self.model = gensim.models.Word2Vec.load("model\word2vec_v3.model")
       self.metaphor = []
       self.sentences_tokenized = []
       self.summary = ""
@@ -54,7 +54,7 @@ class  inference_gen:
         vs = np.divide(vs, sentence_length) # weighted average
         return vs
     def abstract_score_preprocessing(self):
-      f = open("/content/drive/MyDrive/mrc_data.txt", "r")
+      f = open("model\mrc_data.txt", "r")
       data = f.read().split('\n')
       for row in data:
           word = row.strip()[:-3].strip().lower()
