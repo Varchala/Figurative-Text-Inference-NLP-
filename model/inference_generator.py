@@ -1,3 +1,28 @@
+import pandas as pd
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+import gensim
+
+import nltk
+from nltk import word_tokenize, sent_tokenize
+from collections import Counter, defaultdict
+
+import string
+
+from nltk.corpus import wordnet
+import spacy
+import torch
+import json 
+from collections import Counter
+import itertools
+from transformers import T5Tokenizer, T5ForConditionalGeneration, T5Config
+import networkx as nx
+from sklearn.decomposition import PCA
+import spacy
+from spacy.symbols import nsubj, VERB, NOUN, PROPN, ADV, ADJ
+
 class  inference_gen:
 
     def __init__(self):
