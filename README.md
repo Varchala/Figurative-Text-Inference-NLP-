@@ -13,7 +13,9 @@ Bhagirath Tallapragada and Nikhil Koditala
 3) In the command line of the editor or ide type "python -m venv ~path to the environment~" to create an environment where "~path to the environment~" should be a path to your environment. After that activate the env by typing in the .\~path to the environment~\Scripts\activate
 4) Now, unzip the wiki_word2vec.zip folder inside the model folder and copy all the files in the unzipped folder to the model folder. In case the downloaded project folder shows an **empty word2vec folder** then **download the zip file seperately from https://github.com/Varchala/NLP_Project/tree/main/model/wiki_word2vec.zip**
 After everything is set, the folder structure will look as follows:
+
 	![folder structure](https://github.com/Varchala/NLP_Project/blob/main/image.JPG?raw=true)
+	
 5) Now, type "pip install -r requirements.txt" to install the dependencies in the new environment.
 6) Type python on the command line and type the following:
 
