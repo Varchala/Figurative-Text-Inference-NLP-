@@ -19,38 +19,38 @@ After everything is set, the folder structure will look as follows:
 5) Now, type "pip install -r requirements.txt" to install the dependencies in the new environment.
 6) Type python on the command line and type the following:
 
-	``` ###to import the package
+	``` #to import the package
 
 	``` from model import inference_gen
 
-	``` ###to create an object
+	``` #to create an object
 
 	``` m = inference_gen()
 
-	``` ###to run the unsupervised model for the given text
+	``` #to run the unsupervised model for the given text
 
 	``` m.fit("Paragraph to be tested")
 
-	``` ###to find the target words of each sentence
+	``` #to find the target words of each sentence
 
 	``` m.target_words
 
-	``` ###to print the words considered as replace words for the target words
+	``` #to print the words considered as replace words for the target words
 
 	``` m.replace_word
 
-	``` ###to see the sentence tokenized version of the input para along with the replaced words for identified metaphors in every sentence
+	``` #to see the sentence tokenized version of the input para along with the replaced words for identified metaphors in every sentence
 
 	``` m.gen_text
 
-	``` ###to print the identified metaphors for the given number of sentences in the above listed code's ouput
+	``` #to print the identified metaphors for the given number of sentences in the above listed code's ouput
 
 	``` m.metaphor
 
-	``` ###to print the extractive summary
+	``` #to print the extractive summary
 
 	``` m.summary
 
-	``` ###to print the abstractive summary
+	``` #to print the abstractive summary
 
 	``` m.abstractive_summary 
