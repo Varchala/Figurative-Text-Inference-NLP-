@@ -10,7 +10,8 @@ Information  retrieval,  though  a  classical  researchproblem  in  NLP,  contin
 2) Open the project folder in an IDE or editor like VSCode or you could use the command line as well(path being inside the project folder). Make sure you have python installed and updated pip
 3) In the command line of the editor or ide type "python -m venv <path to the environment>" to create an environment where "<path to the environment>" should be a path to your environment. After that activate the env by typing in the .\<path to the environment>\Scripts\activate
 4) Now, unzip the wiki_word2vec.zip folder inside the model folder and copy all the files in the unzipped folder to the model folder.
-5) Type python on the command line and type the following:
+5) Now, type "pip install -r requirements.txt" to install the dependencies in the new environment.
+6) Type python on the command line and type the following:
 
 ##to import the package
 
