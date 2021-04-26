@@ -4,7 +4,7 @@
 Information  retrieval,  though  a  classical  research problem  in  NLP,  continues  to  be  highly  relevant  due  to  the variety  of  domain  based  challenges  associated  with  it.  One  ofthe   many   forms   of   information   retrieval   from   text   includes extractive summarization. Widely used in news applications such as  inShorts  to  encapsulate  news  content.  In  spite  of  advances made  in  this  field,  challenges  in  key  areas  such  as  semantic informativeness, continuity of language remain. Recent advancesin  the  field  of  figurative  text,  particularly  in  identification  and interpretation  of  text  involving  metaphorical  usage  of  language provides  an  interesting  standpoint  to  approach  analysis  and inference  from  text.  In  this  project  we  propose  to  study  the interplay  of  figurative  text  in  day  to  day  language  and  developa  framework  to  gauge  the  unsupervised  methods  of  metaphor identification and interpretation to improve the text summarization  quality  with  focus  on  semantic  informativeness.  We  focus on  text  formats  involving  small  sized  passage  text  like  news articles, poems, excerpts from books and aim to extract intended meaning based on the text. We position the success of our modelas  a  domain  independent  approach  which  can  find  utility  in  avariety  of  contexts  such  as  opinion  mining,  threat  identification in  surveillance,  a  means  to  measure  intensity  of  emotion  etc.
 
 ## Team members
-Bhagirath Tallapragada and Nikhil Koditala
+Bhagirath Tallapragada, Nikhil Koditala and Varchaleswari Ganugapati
 
 ## Installation process
 
