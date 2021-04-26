@@ -64,7 +64,8 @@ class  inference_gen:
 
     def map_word_frequency(self,document):
       return Counter(itertools.chain(*document))
-    
+
+    # reference: https://intellica-ai.medium.com/comparison-of-different-word-embeddings-on-text-similarity-a-use-case-in-nlp-e83e08469c1c
     def get_sif_feature_vectors(self,sentence,sentences):
         sentence1 = [token for token in sentences if token in list(self.model.wv.vocab.keys())]
         word_counts = self.map_word_frequency((sentence1))
