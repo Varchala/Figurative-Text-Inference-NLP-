@@ -1,5 +1,6 @@
 absl-py==0.12.0
 bert-extractive-summarizer==0.7.1
+wheel
 blis==0.7.4
 boto3==1.17.57
 botocore==1.20.57
@@ -10,7 +11,9 @@ click==7.1.2
 cymem==2.0.5
 Cython==0.29.21
 decorator==4.4.2
-en-core-web-sm==3.0.0
+spacy==3.0.5
+spacy-legacy==3.0.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz
 filelock==3.0.12
 gensim==3.6.0
 idna==2.10
@@ -42,16 +45,14 @@ sentencepiece==0.1.95
 six==1.15.0
 sklearn==0.0
 smart-open==3.0.0
-spacy==3.0.5
-spacy-legacy==3.0.2
 srsly==2.4.1
 summarizer==0.0.7
 thinc==8.0.2
 threadpoolctl==2.1.0
-tokenizers==0.5.2
+tokenizers
 torch==1.8.1
 tqdm==4.60.0
-transformers==2.8.0
+transformers
 typer==0.3.2
 typing-extensions==3.7.4.3
 urllib3==1.26.4
