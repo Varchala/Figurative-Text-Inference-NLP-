@@ -194,7 +194,7 @@ class  inference_gen:
             self.target_vector.append(self.model.wv[target])
             self.target_words.append(target)
           else:
-            s=nltk.word_tokenize(sentence);
+            s=nltk.word_tokenize(sentence)
             self.target_vector.append("")
             self.target_words.append("")
 
