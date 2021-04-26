@@ -256,7 +256,7 @@ class  inference_gen:
             self.replace_word.append(rpw)
             self.rpl_vectors.append(self.model.wv[rpw])
             cal = self.cos_sim(self.model.wv.get_vector(list(self.candidate_word_set)[cos_sim.index(max(cos_sim))]),self.model.wv.get_vector(targ_wrd))
-            theta = 0.8
+            theta = 0.7
             if(cal>theta):
                 self.metaphor.append("literal")
                 self.gen_text.append(txt)
