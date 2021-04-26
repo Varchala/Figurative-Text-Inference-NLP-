@@ -12,21 +12,21 @@ Information  retrieval,  though  a  classical  researchproblem  in  NLP,  contin
 4) Now, unzip the wiki_word2vec.zip folder inside the model folder and copy all the files in the unzipped folder to the model folder.
 5) Type python on the command line and type the following:
 
-to import the package
->>> from model import inference_gen
-to create an object
->>> m = inference_gen()
-to run the unsupervised model for the given text
->>> m.fit("Paragraph to be tested")
-to find the target words of each sentence
->>> m.target_words
-to print the words considered as replace words for the target words
->>> m.replace_word
-to see the sentence tokenized version of the input para along with the replaced words for identified metaphors in every sentence
->>> gen_text
-to print the identified metaphors for the given number of sentences in the above listed code's ouput
->>> m.metaphor
-to print the extractive summary
->>> m.summary
-to print the abstractive summary
->>> m.abstractive_summary
+###to import the package
+from model import inference_gen
+###to create an object
+m = inference_gen()
+###to run the unsupervised model for the given text
+m.fit("Paragraph to be tested")
+###to find the target words of each sentence
+m.target_words
+###to print the words considered as replace words for the target words
+m.replace_word
+###to see the sentence tokenized version of the input para along with the replaced words for identified metaphors in every sentence
+m.gen_text
+###to print the identified metaphors for the given number of sentences in the above listed code's ouput
+m.metaphor
+###to print the extractive summary
+m.summary
+###to print the abstractive summary
+m.abstractive_summary
