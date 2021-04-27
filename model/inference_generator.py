@@ -322,13 +322,13 @@ class  inference_gen:
           self.context_vectors.append(self.compute_context_vector(sentence))
       
       for i in range(len(self.context_vectors)):
-	if len(self.context_vectors)>1:
-        	final_context_vector,idx = self.find_context_sims(self.context_vectors[i])
-        	self.f_con_vec.append(final_context_vector)
-        	context_vector = [final_context_vector]
-	else:
-		self.f_con_vec.append(self.context_vectors[i])
-		context_vector = self.context_vectors[i]
+        if len(self.context_vectors)>1:
+                final_context_vector,idx = self.find_context_sims(self.context_vectors[i])
+                self.f_con_vec.append(final_context_vector)
+                context_vector = [final_context_vector]
+        else:
+          self.f_con_vec.append(self.context_vectors[i])
+          context_vector = self.context_vectors[i]
         self.find_candidate_wordset(self.target_words[i])
         cos_sim = self.find_cos_sim(context_vector)
     
