@@ -54,3 +54,5 @@ After everything is set, the folder structure will look as follows:
 	``` #to print the abstractive summary
 
 	``` m.abstractive_summary 
+
+Please note that the input to the model should be a string , something like "It was a cold morning of the early spring, and we sat after breakfast on either side of a cheery fire in the old room at Baker Street. A thick fog rolled down between the lines of dun-coloured houses, and the opposing windows loomed like dark, shapeless blurs through the heavy yellow wreaths. Our gas was lit and shone on the white cloth and glimmer of china and metal, for the table had not been cleared yet. Sherlock Holmes had been silent all the morning, dipping continuously into the advertisement columns of a succession of papers until at last, having apparently given up his search, he had emerged in no very sweet temper to lecture me upon my literary shortcomings."
